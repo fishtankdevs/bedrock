@@ -45,7 +45,7 @@
 				"type": "wordpress-plugin",
 				"dist": {
 					"type": "zip",
-					"url": "https://connect.advancedcustomfields.com/index.php?a=download&p=pro&k=${{ secrets.acf }}"
+					"url": "https://connect.advancedcustomfields.com/index.php?a=download&p=pro&k=b3JkZXJfaWQ9MTA4MTAzfHR5cGU9ZGV2ZWxvcGVyfGRhdGU9MjAxNy0wNi0wOSAxMzo1MToyMg=="
 				},
 				"require": {
 					"ffraenz/private-composer-installer": "^5.0"
@@ -53,8 +53,17 @@
 			}
 		},
 		{
-			"type": "vcs",
-			"url": "git@github.com:fishtankdevs/sage.git"
+			"type": "package",
+			"package": {
+				"name": "fishtankdevs/sage",
+				"version": "1.0.0",
+				"type": "wordpress-theme",
+				"source": {
+					"url": "git@github.com:fishtankdevs/sage.git",
+					"type": "git",
+					"reference": "1.0.0"
+				}
+			}
 		}
 	],
 	"require": {
@@ -67,6 +76,7 @@
 		"roots/bedrock-disallow-indexing": "^2.0",
 		"roots/wordpress": "5.8.2",
 		"roots/wp-config": "1.0.0",
+		"fishtankdevs/sage": "1.0.0",
 		"roots/wp-password-bcrypt": "1.1.0",
 		"wpackagist-plugin/custom-post-type-ui": "^1.10",
 		"wpackagist-plugin/disable-gutenberg": "^2.5",
